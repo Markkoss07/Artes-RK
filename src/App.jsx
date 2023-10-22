@@ -8,6 +8,8 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { CartProvider } from './Componentes/Context/CartContext';
 import Carrito from './Componentes/Item/Carrito';
 import Footer from './Componentes/Item/Footer'
+import Checkout from './Componentes/Item/Checkout'
+// import ControlledCarousel from './Componentes/Item/Carousel';
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <CartProvider>
         <BrowserRouter>
           <NavBar />
+          {/* <ControlledCarousel /> */}
 
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
@@ -25,6 +28,8 @@ function App() {
             <Route path='/sobre nosotros' element={<SobreNosotros />} />
             <Route path='/contacto' element={<Contacto />} />
             <Route path="/carrito" element={<Carrito />}/>
+            <Route path="/checkout" element={<Checkout />}/>
+            {/* <Route path="/carusel" element={<ControlledCarousel />}/> */}
           </Routes>
           <Footer />
         </BrowserRouter>

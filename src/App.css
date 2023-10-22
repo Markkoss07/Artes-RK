@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
+h1,h2,h3,h4,p, a {
+  text-decoration: none;
+}
 .navbar {
   background-color: rgb(236, 159, 88);
   position: static;
@@ -19,14 +22,23 @@
 .navbar-nav {
   display: flex;
   flex-direction: row;
+  margin-left: -100px;
 }
 .navbar-collapse{
   margin-left: 1400px;
 }
+.logo{
+  text-decoration: none;
+}
+.menu-link{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
 .logo-rk{
-  width: 35px;
-  height: 35px;
-  border-radius: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 20px;
   margin-right: 5px;
 }
 
@@ -52,14 +64,74 @@
 }
 /* ITEM */
 
-.card {
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-block: 16px;
+}
+.ver-mas{
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: bisque;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left:80px;
+}
+/* itemDetail */
+.img-detalle {
+  width: max-content;
+  height: 400px;
+  margin-top: 20px;
+}
+.producto-detalle{
   display: flex;
   flex-direction: row;
-  width: 70%;
-
+}
+.textos-detalles{
+  margin-top: 20px;
+  margin-left: 30px ;
 }
 
+.count-general{
+  display: flex;
+  flex-direction: row;
+  margin-left:100px ;
+}
+.item-count{
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.signo-negativo{
+  width: 20px;
+  border: 0px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.signo-cantidad{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.signo-positivo{
+  width: 20px;
+  border: 0px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.agregar-al-carrito{
+  border: 1px solid rgb(149, 5, 5);
+  border-radius: 10px;
+  background-color: rgb(251, 123, 38);
+  height: 40px;
+}
 /* carrito */
+.carrito{
+  text-decoration:none;
+}
 .main-title {
   text-align: center;
   font-family:Arial, Helvetica, sans-serif;
@@ -68,17 +140,35 @@
   color: black;
   margin-top: 20px;
 }
+
  /* FOOTER */
 .footer {
   text-decoration: none;
   color: black;
   background-color: antiquewhite;
-  height: max-content;
+  height: 70px;
   display: flex;
   flex-direction: row;
 }
+.logo-rk2{
+  width: 55px;
+  height: 55px;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-top: 8px;
+}
 .titulo-footer {
-
+  font-family: sans-serif;
+  font-size: 35px;
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 4px;
+}
+.credito{
+  margin-left: 1500px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* .fondo{

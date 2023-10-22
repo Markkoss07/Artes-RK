@@ -20,10 +20,10 @@ const ItemDetail = ( {item} ) => {
     }
 
   return (
-    <div className="container">
+    <main className="container">
         <div className="producto-detalle">
-            <img src={item.imagen} alt={item.titulo} />
-            <div>
+            <img src={item.imagen} alt={item.titulo} className="img-detalle"/>
+            <div className="textos-detalles">
                 <h3 className="titulo">{item.titulo}</h3>
                 <p className="descripcion">{item.descripcion}</p>
                 <p className="categoria">Categoría: {toCapital(item.categoria)}</p>
@@ -36,7 +36,7 @@ const ItemDetail = ( {item} ) => {
                 />
             </div>
         </div>
-    </div>
+    </main>
   )
 }
 

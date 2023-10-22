@@ -19,8 +19,8 @@ import {CartWidget} from '../Item/CartWidget'
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="menu-link" to="/">
-                                <a className="nav-link active" aria-current="page" href=".">Inicio</a>
+                            <Link className="menu-link" to="/inicio">
+                                <a className="nav-link active" aria-current="page" href="/">Inicio</a>
                             </Link>
                         </li>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
