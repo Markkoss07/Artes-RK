@@ -24,7 +24,7 @@ import {CartWidget} from '../Item/CartWidget'
                             </Link>
                         </li>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
-                            <Link className="menu-link" to="/productos/replicas">
+                            <Link className="menu-link" to="/productos/réplicas">
                                 <NavDropdown.Item href="#action/3.1">Réplicas</NavDropdown.Item>
                             </Link>
                             <Link className="menu-link" to="/productos/decorativo">

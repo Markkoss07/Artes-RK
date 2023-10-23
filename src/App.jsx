@@ -9,6 +9,7 @@ import { CartProvider } from './Componentes/Context/CartContext';
 import Carrito from './Componentes/Item/Carrito';
 import Footer from './Componentes/Item/Footer'
 import Checkout from './Componentes/Item/Checkout'
+import Inicio from './Componentes/Item/Inicio';
 // import ControlledCarousel from './Componentes/Item/Carousel';
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/contacto' element={<Contacto />} />
             <Route path="/carrito" element={<Carrito />}/>
             <Route path="/checkout" element={<Checkout />}/>
+            <Route path="/inicio" element={<Inicio />} />
             {/* <Route path="/carusel" element={<ControlledCarousel />}/> */}
           </Routes>
           <Footer />
