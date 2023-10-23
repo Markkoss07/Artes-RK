@@ -19,8 +19,6 @@ const Checkout = () => {
             productos: carrito,
             total: precioTotal()
         }
-        console.log(pedido);
-
         const pedidosRef = collection(db, "pedidos");
 
         addDoc(pedidosRef, pedido)
@@ -30,29 +28,47 @@ const Checkout = () => {
             })
 
     }
+    // const [email] = {...register("email")};
 
     if (pedidoId) {
         return (
-            <div className="container">
+            <div className="container detalle-final-compra">
                 <h1 className="main-title">Muchas gracias por tu compra</h1>
-                <p>Tu número de pedido es: {pedidoId}</p>
+                <p className='codigo-compra'>Tu número de pedido es: {pedidoId}</p>
+                <p className='detalle-compra'> Te mandaremos los detalles de tu compra a</p>
             </div>
         )
     }
+    //  const CheckoutConfirmation = ({ pedidoId }) => (
+    //     <div className="container">
+    //       {pedidoId ? (
+    //         <>
+    //           <h1 className="main-title">Muchas gracias por tu compra</h1>
+    //           <p>Tu número de pedido es: {pedidoId}</p>
+    //         </>
+    //       ) : (
+    //         <p>No se ha realizado ningún pedido.</p>
+    //       )}
+    //     </div>
+    //   );
+    // export default CheckoutConfirmation;
+    
 
   return (
-    <div className="container">
+    <main className="container checkout">
         <h1 className="main-title">Finalizar compra</h1>
+        <p className='texto-from'>Complete con sus datos a continuación:</p>
         <form className="formulario" onSubmit={handleSubmit(comprar)}>
-
-            <input type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
-            <input type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
-            <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
-
+            <div className='relleno-form'>
+                <input className='input-from' type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
+                <input className='input-from' type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
+                <input className='input-from' type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
+            </div>
             <button className="enviar" type="submit">Comprar</button>
 
+
         </form>
-    </div>
+    </main>
   )
 }
 

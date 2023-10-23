@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { toCapital } from './toCapital'
+// import { toCapital } from './toCapital'
 const Item = ( {producto} ) => {
   return (
     <>
