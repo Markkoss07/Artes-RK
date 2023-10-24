@@ -13,7 +13,7 @@ const Carrito = () => {
 
   return (
     <div className="container tienda">
-        <h1 className="main-title">Carrito</h1>
+        <h1 className="titulo-principal">Carrito</h1>
 
         {
             carrito.map((prod) => (
@@ -57,7 +57,7 @@ const Carrito = () => {
                     </div>
                 </div>
             </> :
-            <h2>No hay ningun producto en el carrito</h2>
+            <h2 className='ningun-producto'>No hay ningun producto en el carrito</h2>
         }
         
     </div>

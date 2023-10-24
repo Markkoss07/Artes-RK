@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from '../Context/CartContext';
 import { useForm } from 'react-hook-form';
 import { collection, addDoc } from "firebase/firestore";
-import { db } from '../firebase/config';
+import { infodb } from '../firebase/config';
 
 const Checkout = () => {
 
@@ -19,7 +19,7 @@ const Checkout = () => {
             productos: carrito,
             total: precioTotal()
         }
-        const pedidosRef = collection(db, "pedidos");
+        const pedidosRef = collection(infodb, "pedidos");
 
         addDoc(pedidosRef, pedido)
             .then((doc) => {
@@ -60,9 +60,9 @@ const Checkout = () => {
         <p className='texto-from'>Complete con sus datos a continuación:</p>
         <form className="formulario" onSubmit={handleSubmit(comprar)}>
             <div className='relleno-form'>
-                <input className='input-from' type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
-                <input className='input-from' type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
-                <input className='input-from' type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
+                <input className='input-from' type="text" placeholder="Ingresá su nombre" {...register("nombre")} />
+                <input className='input-from' type="email" placeholder="Ingrese su Correo Electronico" {...register("email")} />
+                <input className='input-from' type="phone" placeholder="Ingrese su Telefono" {...register("telefono")} />
             </div>
             <button className="enviar" type="submit">Comprar</button>
 

@@ -16,7 +16,10 @@ const SobreNosotros = () => {
     
       }, [])
     return (
-        <h1>Sobre Nosotros</h1>
+        <div className='sobre-nosotros'>
+            <h1 className='titulo-sobre-nosotros'>Sobre Nosotros</h1>
+
+        </div>
     )
 }
 

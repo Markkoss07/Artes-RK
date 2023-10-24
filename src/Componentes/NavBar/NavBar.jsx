@@ -10,7 +10,7 @@ import {CartWidget} from '../Item/CartWidget'
         <nav className ="navbar navbar-expand-lg navbar-dark bg-body-dark">
             <div className="container-fluid">
                 <img src= "https://markkoss07.github.io/UltimoProyectojs-Aybar/imagenes/imglogoderedes.jpeg" alt="logo" className='logo-rk' />
-                <Link to="/" className='logo' >
+                <Link to="/Inicio" className='logo' >
                     <a className="navbar-brand" href="ddsd">Artes Rk</a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@ import {CartWidget} from '../Item/CartWidget'
                             </Link>
                         </li>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
-                            <Link className="menu-link" to="/productos/réplicas">
+                            <Link className="menu-link" to="/productos/bellas artes">
                                 <NavDropdown.Item href="#action/3.1">Réplicas</NavDropdown.Item>
                             </Link>
                             <Link className="menu-link" to="/productos/decorativo">

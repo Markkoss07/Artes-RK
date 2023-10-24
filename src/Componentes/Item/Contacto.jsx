@@ -10,7 +10,6 @@ const Contacto = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Enviado", valores)
     }
 
     const handleValores = (e) => {
@@ -21,34 +20,39 @@ const Contacto = () => {
     }
 
     return (
-        <div className='contenedor'>
-            <h1 className='main-titulo'> Contacto</h1>
-            <form className='formulario' onSubmit={handleSubmit}>
-                <input 
-                    type="text" 
-                    placeholder='Ingrese su Nombre'
-                    value={valores.nombre}
-                    onChange={handleValores}
-                    name="nombre"
-                />
-                <input 
-                    type="email" 
-                    placeholder='Ingrese su Correo Electronico'
-                    value={valores.email}
-                    onChange={handleValores}
-                    name="email"
-                />
-                <input 
-                    type="phone" 
-                    placeholder='Ingrese su Telefono'
-                    value={valores.telefono}
-                    onChange={handleValores}
-                    name="telefono"
-                />
+        <div className='contenedor '>
+            <h1 className='titulo-principal'> Contacto</h1>
+            <div className='fondo-contacto'>
+                <form className='formulario relleno-form' onSubmit={handleSubmit}>
+                    <input 
+                        type="text" 
+                        placeholder='Ingrese su Nombre'
+                        value={valores.nombre}
+                        onChange={handleValores}
+                        name="nombre"
+                        className='input-from'
+                    />
+                    <input 
+                        type="email" 
+                        placeholder=' Correo Electronico'
+                        value={valores.email}
+                        onChange={handleValores}
+                        name="email"
+                        className='input-from'
+                    />
+                    <input 
+                        type="phone" 
+                        placeholder='Ingrese su Telefono'
+                        value={valores.telefono}
+                        onChange={handleValores}
+                        name="telefono"
+                        className='input-from'
+                    />
 
-                <button className='enviar' type='submit'> Enviar</button>
+                    <button className='enviar' type='submit'> Enviar</button>
 
-            </form>
+                </form>
+            </div>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { db } from "../firebase/config";
+import { infodb } from "../firebase/config";
 
 const ItemListContainer = () => {
 
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
-      const productosRef = collection(db, "productos");
+      const productosRef = collection(infodb, "productos");
       const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
 
       getDocs(q)

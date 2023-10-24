@@ -2,6 +2,7 @@ import React from 'react'
 // import NavBar from '../NavBar/NavBar'
 import ControlledCarousel from './Carousel'
 import ItemListContainer from './ItemListContainer'
+import Recuadros from './Recuardos'
 // import {Link} from 'react-router-dom'
 
 const Inicio = () => {
@@ -10,6 +11,7 @@ const Inicio = () => {
         <div>
             {/* <NavBar /> */}
             <ControlledCarousel/>
+            <Recuadros />
             <ItemListContainer/>
 
 
