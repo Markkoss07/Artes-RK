@@ -1,8 +1,6 @@
 import React from "react"
 import Item from "./Item";
 import { toCapital } from "./toCapital";
-// import CardList from "./CardList"
-// import {Col} from "react-bootstrap"
 
 
 const ItemList = ( {productos, titulo} ) => {

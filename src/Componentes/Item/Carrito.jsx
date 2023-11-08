@@ -16,7 +16,7 @@ const Carrito = () => {
         <h1 className="titulo-principal">Carrito</h1>
 
         {
-            carrito.map((prod) => (
+            carrito.map((prod, onDelete) => (
                 <div key={prod.id}>
                     <br />
                     <div className='fondo-carrito'>
@@ -37,7 +37,7 @@ const Carrito = () => {
                             <small>Precio total</small>
                             <p className='precio-total-carrito'>${prod.precio * prod.cantidad}</p>
                         </div>
-                        <button class="carrito-producto-eliminar" id={prod.id}>
+                        <button class="carrito-producto-eliminar" onClick={() => onDelete(prod.id)} >
                             <img src="https://cdn-icons-png.flaticon.com/512/3515/3515498.png" alt="eliminar-logo" className='eliminar-logo' />
                          </button>
                     </div>
@@ -57,7 +57,13 @@ const Carrito = () => {
                     </div>
                 </div>
             </> :
-            <h2 className='ningun-producto'>No hay ningun producto en el carrito</h2>
+            <div className='carrito-vacio'>
+                <h2 className='ningun-producto'>No hay ningun producto en el carrito</h2>
+                <Link to="/productos">
+                    <button className='ver-mas'> Ver Productos</button>
+                </Link>
+
+            </div>
         }
         
     </div>

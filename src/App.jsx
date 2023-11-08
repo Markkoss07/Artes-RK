@@ -10,7 +10,7 @@ import Carrito from './Componentes/Item/Carrito';
 import Footer from './Componentes/Item/Footer'
 import Checkout from './Componentes/Item/Checkout'
 import Inicio from './Componentes/Item/Inicio';
-// import ControlledCarousel from './Componentes/Item/Carousel';
+
 
 
 function App() {
@@ -18,8 +18,7 @@ function App() {
     <div>
       <CartProvider>
         <BrowserRouter>
-          <NavBar />
-          {/* <ControlledCarousel /> */}
+          <NavBar /> 
 
           <Routes>
             <Route path='/' element={<ItemListContainer />} />

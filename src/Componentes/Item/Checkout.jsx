@@ -28,34 +28,20 @@ const Checkout = () => {
             })
 
     }
-    // const [email] = {...register("email")};
-
+    
     if (pedidoId) {
+
         return (
             <div className="container detalle-final-compra">
-                <h1 className="main-title">Muchas gracias por tu compra</h1>
+                <h1 className="titulo-principal">Muchas gracias por tu compra</h1>
                 <p className='codigo-compra'>Tu número de pedido es: {pedidoId}</p>
-                <p className='detalle-compra'> Te mandaremos los detalles de tu compra a</p>
+                {/* <p className='detalle-compra'> Te mandaremos los detalles de tu compra a {}</p> */}
             </div>
         )
     }
-    //  const CheckoutConfirmation = ({ pedidoId }) => (
-    //     <div className="container">
-    //       {pedidoId ? (
-    //         <>
-    //           <h1 className="main-title">Muchas gracias por tu compra</h1>
-    //           <p>Tu número de pedido es: {pedidoId}</p>
-    //         </>
-    //       ) : (
-    //         <p>No se ha realizado ningún pedido.</p>
-    //       )}
-    //     </div>
-    //   );
-    // export default CheckoutConfirmation;
     
-
-  return (
-    <main className="container checkout">
+    return (
+        <main className="container checkout">
         <h1 className="main-title">Finalizar compra</h1>
         <p className='texto-from'>Complete con sus datos a continuación:</p>
         <form className="formulario" onSubmit={handleSubmit(comprar)}>
@@ -73,3 +59,18 @@ const Checkout = () => {
 }
 
 export default Checkout
+
+
+//  const CheckoutConfirmation = ({ pedidoId }) => (
+//     <div className="container">
+//       {pedidoId ? (
+//         <>
+//           <h1 className="main-title">Muchas gracias por tu compra</h1>
+//           <p>Tu número de pedido es: {pedidoId}</p>
+//         </>
+//       ) : (
+//         <p>No se ha realizado ningún pedido.</p>
+//       )}
+//     </div>
+//   );
+// export default CheckoutConfirmation;

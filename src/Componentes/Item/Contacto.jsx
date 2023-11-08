@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 const Contacto = () => {
 
@@ -18,6 +19,7 @@ const Contacto = () => {
             [e.target.name]: e.target.value
         })
     }
+    
 
     return (
         <div className='contenedor '>
@@ -48,8 +50,9 @@ const Contacto = () => {
                         name="telefono"
                         className='input-from'
                     />
-
-                    <button className='enviar' type='submit'> Enviar</button>
+                    <Link to="/Inicio">
+                        <button className='enviar' type='submit'> Enviar</button>
+                    </Link>
 
                 </form>
             </div>

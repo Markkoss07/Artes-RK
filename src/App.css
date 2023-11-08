@@ -305,8 +305,14 @@ small{
   padding: 3px;
   border-radius: 5px;
 }
+.carrito-vacio{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 598px;
+}
 .ningun-producto{
-  margin-bottom: 690px;
+  margin-bottom: 0px;
 }
 
 /* Checkout */
@@ -365,12 +371,92 @@ small{
   margin-right: auto;
  }
 /* SOBRE NOSOTROS */
+.sobre-nosotros{
+  background-image: url('https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -20px;
+}
 .titulo-sobre-nosotros{
 text-align: center;
 margin-top: 20px;
 font-size: 40px;
 font-family: 'Times New Roman', Times, serif;
 font-weight: bold;
+color: black;
+}
+.sub-sobre-nosotros{
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  margin-top: 40px;
+}
+.subtitulo{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+.mapa-qsomos{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.mapa{
+  border-radius: 15px;
+  margin-left: 300px;
+}
+.quienes-somos{
+  width: 500px;
+  margin-left: 50px;
+}
+.titulo-quienes-somos{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+.text-qsomos{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.obras-importantes{
+  margin-top: 50px;
+}
+.texto-img{
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+.imagenes-snosotros{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin-left: 200px;
+  padding-bottom: 50px;
+}
+.imagen-importante{
+  width: 300px;
+  height: max-content;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.imagen-importante2{
+  width: 500px;
+  height: max-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
  /* FOOTER */
